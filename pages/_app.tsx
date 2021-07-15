@@ -1,8 +1,6 @@
-/** @jsxRuntime classic /
-/* @jsx jsx */
-import { jsx } from 'theme-ui'
+/** @jsxImportSource theme-ui */
 import { ThemeProvider } from 'theme-ui'
-import theme from '../theme'
+import theme from '../src/theme/theme'
 import Nav from '../src/components/nav'
 
 export default function App({ Component, pageProps }) {

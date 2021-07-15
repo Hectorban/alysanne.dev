@@ -1,7 +1,4 @@
-/** @jsxRuntime classic /
-/* @jsx jsx */
-import { jsx } from 'theme-ui'
-import Link from 'next/link'
+/** @jsxImportSource theme-ui */
 
 const index = ({content}) => (
   <div sx={{ height: `calc(100vh - 60px)`}}>

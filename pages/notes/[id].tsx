@@ -1,6 +1,4 @@
-/** @jsxRuntime classic /
-/* @jsx jsx */
-import { jsx } from 'theme-ui'
+/** @jsxImportSource theme-ui */
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
@@ -16,10 +14,17 @@ const Page = () => {
     const fetchApiData = async () => {
       const response = await fetch(`http://localhost:3000/api/note/${id}`)
       const {data} = await response.json()
+      console.log(data)
       setnote(data)
     }
     fetchApiData()
   }, [id])
+  console.log(note)
+  if (!note) {
+    return (
+      <div>Loading</div>
+    )
+  }
 	  return (
 	  <div sx={{variant: 'containers.page'}}>
 		  <h1>Note: {note.title} </h1>

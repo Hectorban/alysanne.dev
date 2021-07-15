@@ -1,7 +1,8 @@
+import {NextApiRequest, NextApiResponse} from 'next'
 import nc from 'next-connect'
 import notes from '../../../src/data/data'
 
-const handler = nc()
+const handler = nc<NextApiRequest, NextApiResponse>()
 	.post((req, res) => {
 		const note = {
 			...req.body,
