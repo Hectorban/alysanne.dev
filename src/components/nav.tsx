@@ -18,9 +18,9 @@ const Nav = () => (
           fontSize: 3,
           cursor: 'pointer'
         }}
-        href={process.env.HELP_APP_URL}
+        href='https://github.com/Hectorban'
       >
-        Help
+        My Github
 </a>
 
     </nav>

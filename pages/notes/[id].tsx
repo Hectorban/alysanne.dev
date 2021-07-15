@@ -12,7 +12,7 @@ const Page = () => {
   const [note, setnote] = useState<notetype>()
   useEffect(() => {
     const fetchApiData = async () => {
-      const response = await fetch(`http://localhost:3000/api/note/${id}`)
+      const response = await fetch(`${process.env.ROOT_URL}/api/note/${id}`)
       const {data} = await response.json()
       console.log(data)
       setnote(data)

@@ -14,7 +14,7 @@ export function getStaticProps() {
   return {
     props: {
       content: {
-        title: 'This is my really nice app'
+        title: 'Alysanne website(onConstruction)'
       }
     }
   }
