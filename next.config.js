@@ -3,5 +3,10 @@ const dotenvLoad = require('dotenv-load')
 
 dotenvLoad()
 
-const withEnv = nextEnv()
-module.exports = withEnv()
+const withNextEnv = nextEnv()
+module.exports = withNextEnv({
+  // Your Next.js config.
+   images: {
+    domains: ['i.imgur.com'],
+  },
+});
