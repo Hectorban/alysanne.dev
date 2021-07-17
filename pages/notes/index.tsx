@@ -1,7 +1,16 @@
 /** @jsxImportSource theme-ui */
 import Link from 'next/link'
+import { FC } from 'react'
 
-const index = ({notes}) => {
+interface Props {
+  notes: notesType[]
+}
+interface notesType {
+  title: string
+  id: number
+}
+
+const index:FC<Props> = ({notes}: Props) => {
     return (
     <div sx={{variant: 'containers.page'}}>
       <h1>My Notes</h1>
