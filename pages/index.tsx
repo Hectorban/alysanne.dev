@@ -1,4 +1,3 @@
-/** @jsxImportSource theme-ui */
 import { FC } from "react"
 import { GetStaticProps } from 'next'
 
@@ -10,9 +9,9 @@ interface contenttypes {
 }
 
 const index:FC<Props> = ({content}: Props) => (
-  <div sx={{ height: `calc(100vh - 60px)`}}>
-    <div sx={{variant: 'containers.page', display: 'flex', alignItems: 'center', height: '100%'}}>
-      <h1 sx={{fontSize: 8, my: 0}}>{content.title}</h1>
+  <div>
+    <div>
+      <h1>{content.title}</h1>
     </div>
   </div>
 )

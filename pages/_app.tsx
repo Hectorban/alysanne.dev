@@ -1,4 +1,3 @@
-/** @jsxImportSource theme-ui */
 import type { AppProps } from 'next/app'
 import Nav from '../src/components/nav'
 
